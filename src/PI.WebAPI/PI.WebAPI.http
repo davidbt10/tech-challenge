@@ -1,0 +1,6 @@
+@PI.WebAPI_HostAddress = http://localhost:5278
+
+GET {{PI.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
