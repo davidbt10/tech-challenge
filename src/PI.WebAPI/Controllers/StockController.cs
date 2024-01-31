@@ -18,7 +18,7 @@ namespace PI.WebAPI.Controllers
         }
 
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         [Route("stock/")]
         public ActionResult<GetAllAssetsResponse> GetAllStocks()
         {
@@ -26,7 +26,7 @@ namespace PI.WebAPI.Controllers
         }
 
         [HttpPost]
-        //[Authorize]
+        [Authorize]
         public ActionResult<BuyStockResponse> BuyStock([FromBody] BuyStockRequest request)
         {
             return Ok(_stockService.BuyStock(request));
